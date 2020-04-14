@@ -1,0 +1,51 @@
+
+
+
+module.exports = [
+  {
+    api: '/mock/api/v3/login/verificationcode/', //获取验证码
+    method: 'get',
+    response: {
+      'code': '10000',
+      'message': '请求成功',
+      'data': {
+        'verificationCode': '110099',
+      },
+      'serviceCode': '3.0',
+    },
+    delay: 1000,
+    error: {},
+  }, {
+    api: '/mock/api/v3/login', //密码登录
+    method: 'post',
+    response: {
+      'code': '10000',
+      'message': '登录请求成功',
+      'data': {
+        'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbmVhZG1pbiIsImVudGVycHJpc2VDb2RlIjoxMDEwLCJ1c2VyRW50ZXJwcmlzZVN0YXR1cyI6MywiYXV0byI6IjAiLCJ1c2VyU3RhdHVzIjoxLCJ1c2VyX25hbWUiOiJjbmVhZG1pbiIsInVzZXJGdWxsTmFtZSI6IuWNj-WQiOeuoeeQhuWRmCIsInVzZXJMb2dvIjpudWxsLCJ1c2VySWQiOiIzMTY2MDM0MDA5OTQ4MTYiLCJhdXRob3JpdGllcyI6WyJhZG1pbiJdLCJjbGllbnRfaWQiOiJjbmVncm91cCIsInNjb3BlIjpbImFsbCIsInJlYWQiLCJ3cml0ZSJdLCJlbnRlcnByaXNlSWQiOiIzMTY2MDM0OTMyNjk1MDQiLCJleHAiOjE4OTM5MjgxMjksImVudGVycHJpc2VMb2dvIjoiaHR0cDovLzEwLjEwLjE1LjgzL2FwaS92My9pbWFnZXMvODE0NzNjNzUwNWM2NDNjMzhkNGQ3YTIwZTYxZmIxN2QucG5nIiwiZW50ZXJwcmlzZU5hbWUiOiLljY_lkIjmlrDog73mupAiLCJqdGkiOiIzNmY1ZTkyMS1hNDI4LTQxNjctODhlYS02ZDgyYjc0ZjE2MjUiLCJ1c2VybmFtZSI6ImNuZWFkbWluIn0.Wgn0LgemTI0fnwwzggntYKcg-VsHrBEVsZ1KYpyq6EQ',
+        'token_type': 'bearer',
+        'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbmVhZG1pbiIsImVudGVycHJpc2VDb2RlIjoxMDEwLCJ1c2VyRW50ZXJwcmlzZVN0YXR1cyI6MywiYXV0byI6IjAiLCJ1c2VyU3RhdHVzIjoxLCJ1c2VyX25hbWUiOiJjbmVhZG1pbiIsInVzZXJGdWxsTmFtZSI6IuWNj-WQiOeuoeeQhuWRmCIsInVzZXJMb2dvIjpudWxsLCJ1c2VySWQiOiIzMTY2MDM0MDA5OTQ4MTYiLCJhdXRob3JpdGllcyI6WyJhZG1pbiJdLCJjbGllbnRfaWQiOiJjbmVncm91cCIsInNjb3BlIjpbImFsbCIsInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiIzNmY1ZTkyMS1hNDI4LTQxNjctODhlYS02ZDgyYjc0ZjE2MjUiLCJlbnRlcnByaXNlSWQiOiIzMTY2MDM0OTMyNjk1MDQiLCJleHAiOjIyMDkyODgxMjksImVudGVycHJpc2VMb2dvIjoiaHR0cDovLzEwLjEwLjE1LjgzL2FwaS92My9pbWFnZXMvODE0NzNjNzUwNWM2NDNjMzhkNGQ3YTIwZTYxZmIxN2QucG5nIiwiZW50ZXJwcmlzZU5hbWUiOiLljY_lkIjmlrDog73mupAiLCJqdGkiOiI4NWIwNzk4ZS1hYWQyLTQzMzAtYWY4MC1lYjQ5NmFjMWRiZmQiLCJ1c2VybmFtZSI6ImNuZWFkbWluIn0.t6mfwEAHAdtGH4jzHzE8dOwIHSXARUqUiRJUGwrSviE',
+        'expires_in': 315359999,
+        'scope': 'all read write',
+        'sub': 'cneadmin',
+        'enterpriseCode': 1010,
+        'userEnterpriseStatus': 3,
+        'auto': '0',
+        'userStatus': 1,
+        'userFullName': '协合管理员',
+        'enterpriseId': '316603493269504',
+        'userLogo': null,
+        'enterpriseLogo': 'http://10.10.15.83/api/v3/images/81473c7505c643c38d4d7a20e61fb17d.png',
+        'userId': '316603400994816',
+        'enterpriseName': '协合新能源',
+        'username': 'cneadmin',
+        'jti': '457ac125-6364-4902-bf69-5e9c74490a13',
+        'right': 'monitor_powerUpdate,powerCurve_export,scatterPlot_export,historyTrend_export,realTime_export,historyTrendTurbine_export,realTimeTurbine_export,alarm_remove,alarm_worklist,alarm_statistics_export,operation_workStation_manage,operation_workStation_finish,workStation_add,operation_planManage_operate,operation_locate_management,workExamine_defect_add,workExamine_defect_excute,workExamine_defect_review,workExamine_defect_check,workExamine_inspection_excute,workExamine_inspection_check,twoTicket_config_edit,workTicket_add,workTicket_operate,operationTicket_add,operationTicket_operate,operation_book_operateAsset,book_operateManufacture,book_operateMode,book_operateDevice,book_operatePart,book_operateWarehouse,book_operateGoods,book_operateSpare,book_operateTool,book_operateSupply,book_exportRecord,daily_report,daily_import,operation_experience_edit,operation_case_operate,station_export,station_point_operate,station_alert_operate,station_powercurve_operate,weatherConfig_operate,account_enterprise_update,account_department_create,account_department_delete,account_department_update,account_department_user,account_department_station,account_user_create,account_user_invite,account_user_batchImport,account_user_delete,account_user_enable,account_user_disable,account_user_edit,account_user_audit,account_role_create,account_role_delete,account_role_update,account_role_config,config_production_operate,inefficientDetect_modify,cleanModel_modify,intelligentWarning_operate,config_score_modify,dailyQuery_export,intelligentWarning_worklist,intelligentWarning_remove,analysis_cleanModel_planRecord_operate,inefficientDetect_worklist,inefficientDetect_remove,analysis_turbineFDD_repeat,turbineFDD_console_new,alertSys_dataManagement_restart,monitor_powerUpdate,powerCurve_export,scatterPlot_export,historyTrend_export,realTime_export,historyTrendTurbine_export,realTimeTurbine_export,alarm_remove,alarm_worklist,alarm_statistics_export,operation_workStation_manage,operation_workStation_finish,workStation_add,operation_planManage_operate,operation_locate_management,workExamine_defect_add,workExamine_defect_excute,workExamine_defect_review,workExamine_defect_check,workExamine_inspection_excute,workExamine_inspection_check,twoTicket_config_edit,workTicket_add,workTicket_operate,operationTicket_add,operationTicket_operate,operation_book_operateAsset,book_operateManufacture,book_operateMode,book_operateDevice,book_operatePart,book_operateWarehouse,book_operateGoods,book_operateSpare,book_operateTool,book_operateSupply,book_exportRecord,daily_report,daily_import,operation_experience_edit,operation_case_operate,station_export,station_point_operate,station_alert_operate,station_powercurve_operate,weatherConfig_operate,account_enterprise_update,account_department_create,account_department_delete,account_department_update,account_department_user,account_department_station,account_user_create,account_user_invite,account_user_batchImport,account_user_delete,account_user_enable,account_user_disable,account_user_edit,account_user_audit,account_role_create,account_role_delete,account_role_update,account_role_config,config_production_operate,inefficientDetect_modify,cleanModel_modify,intelligentWarning_operate,config_score_modify,dailyQuery_export,intelligentWarning_worklist,intelligentWarning_remove,analysis_cleanModel_planRecord_operate,inefficientDetect_worklist,inefficientDetect_remove,analysis_turbineFDD_repeat,turbineFDD_console_new,alertSys_dataManagement_restart',
+        'rightMenu': 'screen,homepage,monitor,monitor_station,monitor_alarm,monitor_alarm_realTime,monitor_alarm_history,monitor_alarm_statistics,monitor_alarm_worklist,monitor_alarm_remove,monitor_powerCurve,monitor_dataAnalysis,dataAnalysis_scatterPlot,dataAnalysis_historyTrend,dataAnalysis_realTime,dataAnalysis_dataExport,dataAnalysis_dataQuality,operation,operation_worklist,operation_worklist_statistics,operation_twoTicket,operation_twoTicket_config,operation_twoTicket_work,operation_twoTicket_operation,operation_book,operation_book_assetConfig,operation_book_deviceManage,operation_book_deviceBook,operation_book_warehouseConfig,operation_book_warehouseManage,operation_book_warehouseRecord,operation_running,operation_running_daily,operation_running_monthly,operation_experience,operation_locate,operation_case,operation_workStation,operation_planManage,system,system_station,system_station_stat,system_station_device,system_station_point,system_station_alert,system_station_powercurve,system_account,system_account_enterprise,system_account_user,system_account_role,system_config,system_config_production,system_config_warning,system_config_score,system_weatherConfig,statistics,statistics_station,statistics_station_all,statistics_station_production,statistics_station_operation,statistics_station_resource,statistics_station_comparation,statistics_station_score,statistics_device,statistics_device_performance,statistics_device_comparation,statistics_device_customComparation,statistics_report,statistics_report_general,statistics_report_report,statistics_report_table,statistics_report_dailyQuery,analysis,analysis_powerGeneration,analysis_cleanModel,analysis_cleanModel_pending,analysis_cleanModel_planRecord,analysis_inefficientDetect,analysis_inefficientDetect_pending,analysis_inefficientDetect_remove,analysis_inefficientDetect_worklist,analysis_inefficientDetect_history,analysis_yaw,analysis_intelligentWarning,analysis_intelligentWarning_pending,analysis_intelligentWarning_worklist,analysis_intelligentWarning_remove,analysis_intelligentWarning_history,analysis_turbineFDD,analysis_turbineFDD_recent,analysis_turbineFDD_history,analysis_turbineFDD_console,analysis_windPower,analysis_windPower_groupPerformance,analysis_windPower_regionPerformance,analysis_windPower_stationPerformance,analysis_windPower_operationalData,analysis_windPower_stopStatus,analysis_windPower_actuator,analysis_dataTool,analysis_dataTool_scatter,analysis_dataTool_sequence,analysis_dataTool_histogram,analysis_dataTool_windSource,turbine_alertSys,alertSys_turbineStatus,alertSys_allAlerts,alertSys_dataManagement,alertSys_dataManagement_overview,alertSys_dataManagement_file,alertSys_dataManagement_excute,reportManage,monitor_reportQuery,reportQuery_powerReport,reportQuery_deviceStatus,reportQuery_malfunction,reportQuery_powerLost,reportManage_pvReport,pvReport_station,pvReport_centralizedInverter,pvReport_stringInverter,pvReport_combinerBox,pvReport_weather,monitor_dataAnalysisTurbine,dataAnalysisTurbine_historyTrend,dataAnalysisTurbine_realTime,operation_worklist_defect,operation_worklist_inspection',
+      },
+      'serviceCode': null,
+    },
+    delay: 1000,
+    error: {},
+  },
+];

@@ -30,6 +30,11 @@ export default {
 <style lang="scss">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  background: pink;
 
   h1 {
     color: green;

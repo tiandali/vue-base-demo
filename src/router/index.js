@@ -21,11 +21,21 @@ export const constantRoutes = [
   },
   {
     //首页
-    path: '/home',
+    path: '',
     component: () => import('../views/home'),
     meta: {
       isLogin: true
     },
+    children: [
+      {
+        path: 'search',
+        component: () => import('../views/queryEntity/SearchEntity')
+      },
+      {
+        path: 'info',
+        component: () => import('../views/queryEntity/EntityInfo')
+      }
+    ]
   }
 ];
 

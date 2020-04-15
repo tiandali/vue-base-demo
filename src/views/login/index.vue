@@ -114,7 +114,7 @@ export default {
           //iViewUi的友好提示
           this.$message(res.data.message);
           //登录成功后跳转到指定页面
-          this.$router.push("/");
+          this.$router.push("/search");
         }
         this.title = res.data;
       });

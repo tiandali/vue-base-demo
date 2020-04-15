@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>
+    <!-- <h1>{{ msg }}</h1> -->
     <router-view></router-view>
   </div>
 </template>
@@ -34,7 +34,7 @@ export default {
   flex: 1;
   flex-direction: column;
   height: 100%;
-  background: pink;
+  // background: pink;
 
   h1 {
     color: green;

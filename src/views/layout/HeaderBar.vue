@@ -49,6 +49,7 @@ export default {
   .timeStyle {
     color: #7ac231;
     line-height: 100px;
+    font-size: 12px;
   }
 }
 </style>

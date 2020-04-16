@@ -81,7 +81,7 @@ export default {
 }
 .sideMenu {
   width: 180px;
-  min-height: 100%;
+  min-height: calc(100vh -150px);
   background: pink;
   .el-menu-item {
     font-size: 16px;
@@ -90,7 +90,7 @@ export default {
     border-right: 0;
   }
   .el-menu-vertical-demo {
-    height: 100vh;
+    min-height: calc(100vh - 150px);
   }
 }
 </style>

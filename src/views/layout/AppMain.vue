@@ -1,9 +1,9 @@
 <template>
   <section class="app-main">
     <transition name="fade-transform" mode="out-in">
-      <keep-alive :include="cachedViews">
-        <router-view :key="key" />
-      </keep-alive>
+      <!-- <keep-alive :include="cachedViews"> -->
+      <router-view :key="key" />
+      <!-- </keep-alive> -->
     </transition>
   </section>
 </template>
@@ -34,7 +34,7 @@ export default {
   min-height: calc(100vh - 100px);
   width: 100%;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   background-color: #f5f7f9;
 }
 </style>

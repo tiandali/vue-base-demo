@@ -1,7 +1,13 @@
 <template>
   <div class="searchMain">
     <div class="inputContent">
-      <el-input placeholder="请输入内容" prefix-icon="el-icon-search" v-model="input"></el-input>
+      <el-input
+        placeholder="请输入内容"
+        prefix-icon="el-icon-search"
+        @change="queryEntity"
+        v-model="inputdata"
+        @input="getInputValue"
+      ></el-input>
       <div class="caseBar">
         <span class="fontStyle">例如:</span>
         <span class="caseStyle" v-for="item in cases" v-bind:key="item">{{item}}</span>
@@ -15,11 +21,22 @@ export default {
   name: "SearchEntity",
   data() {
     return {
+      inputdata: "",
       cases: ["土豆", "玉米", "猪肉", "水稻"]
     };
   },
   created() {},
-  methods: {}
+  methods: {
+    getInputValue(value) {
+      console.log("输入框当前的value: ", value);
+      this.inputdata = value;
+    },
+    queryEntity(value) {
+      console.log("搜索的value: ", value);
+      this.$router.push("/info");
+    }
+  },
+  computed: {}
 };
 </script>
 

@@ -25,7 +25,7 @@ export const menus = [
     iconStyle: "el-icon-document",
   }, {
     name: "知识问答",
-    path: "Quiz",
+    path: "quiz",
     rightKey: "queryEntity",
     iconStyle: "el-icon-setting",
   }

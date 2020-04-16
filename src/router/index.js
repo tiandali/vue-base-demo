@@ -34,9 +34,40 @@ export const constantRoutes = [
       {
         path: 'info',
         component: () => import('../views/queryEntity/EntityInfo')
+      },
+      {
+        path: '/identifyEntity',
+        component: () => import('../views/identifyEntity/IdentifyEntity'),
+        meta: {
+          isLogin: true
+        },
+      },
+      {
+        path: '/knowledgeOverview',
+        component: () => import('../views/knowledgeOverview/KnowledgeSearch'),
+        meta: {
+          isLogin: true
+        },
+      },
+      {
+        path: '/overview',
+        component: () => import('../views/knowledgeOverview/Overview'),
+        meta: {
+          isLogin: true
+        },
+      },
+      {
+        path: 'quiz',
+        component: () => import('../views/errPage/404'),
+        // component: () => import('../views/quiz/Quiz'),
+        meta: {
+          isLogin: true
+        },
+
       }
     ]
-  }
+  },
+
 ];
 
 export default new Router({
